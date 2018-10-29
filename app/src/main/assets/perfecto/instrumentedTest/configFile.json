@@ -1,0 +1,15 @@
+{
+  "cloudURL": "<your cloud url>",
+  "securityToken": "<your security token>",
+  "devices": [
+    {
+			"platformName": "Android",
+			"platformVersion": "^[678].*"
+		}
+  ],
+  "jobName": "some_job",
+  "jobNumber": 1,
+  "branch": "some_branch",
+  "installationDetails" : {"preCleanUp" : "true"},
+  "postExecution" : {"uninstall" : "true" }
+}
