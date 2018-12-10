@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.perfectomobile.instrumentedtest.gradleplugin'
+
 
 android {
     compileSdkVersion 24
@@ -30,4 +32,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
+
+
+}
+perfectoGradleSettings {
+    cloudURL "MYCLOUD.perfectomobile.com"
+    securityToken "MYTOKEN"
 }
